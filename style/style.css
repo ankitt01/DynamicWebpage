@@ -12,6 +12,7 @@ font-family: 'Montserrat', sans-serif; */
 body {
     background: #17181a;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 #logo {
@@ -63,6 +64,9 @@ body {
 }
 .hero-img {
     position: relative;
+    flex: 1;
+    flex-basis: 25rem;
+    overflow: hidden;
 }
 .hero-img img {
     width: 100%;
@@ -82,7 +86,7 @@ body {
 
 .hero-desc h2 {
     font-family: 'Abril Fatface', cursive;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .hero-desc p {
