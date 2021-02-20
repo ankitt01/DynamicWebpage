@@ -30,6 +30,8 @@ body {
     width: 80%;
     margin: auto;
     padding: 2rem 0rem;
+    position: relative;
+    z-index: 99;
 }
 
 .line1,
@@ -168,18 +170,18 @@ body {
 }
 .cursor.nav-active {
     background: rgb(86,124,228);
-    transform: scale(3);
+    transform: scale(2.5);
 }
 .cursor.explore-active {
     background: white;
-    transform: scale(3);
+    transform: scale(2.5);
 }
 
 .cursor-text {
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 0.5rem;
+    font-size: 1rem;
     transform: translate(-50%,-50%);
 }
 .title {
@@ -208,4 +210,8 @@ body {
 }
 .scrollmagic-pin-spacer {
     position: static !important;
+}
+
+body.hide {
+    overflow: hidden;
 }
